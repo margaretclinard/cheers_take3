@@ -1,9 +1,6 @@
 # cheers_take3
 The interactive version of ruby cheers exercise (see: margaretclinard/cheers-pt1 &amp; margaretclinard/cheers_take2).
 
-# cheers_take2
-The ruby cheers exercise (see: margaretclinard/cheers-pt1), this time 3 weeks into learning Ruby, with tests.
-
 ## Instructions
 
 ## Specifications, for interactive version of cheers
