@@ -6,14 +6,15 @@ class Cheer
   def self.for_birthday(birthday)
     today = Date.today
     next_birthday = BirthdayParser.parse(birthday)
-    difference = next_birthday - today
+    difference = ((next_birthday - today) % 365).to_i
     case difference
     when 0
-      "Happy Birthday!"
+      "Awesome! Your birthday is today! Happy Birthday!"
     when 1
       "Awesome! Your birthday is in 1 day! Happy Birthday in advance!"
     else
-      "Awesome! Your birthday is in 1 days! Happy Birthday in advance!"
+      "Awesome! Your birthday is in #{difference} days! Happy Birthday in advance!"
+    end
   end
 
   def self.for_person(name)
